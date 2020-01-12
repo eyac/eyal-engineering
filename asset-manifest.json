@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/maya/static/css/main.d1b05096.chunk.css",
+    "main.js": "/maya/static/js/main.2d781b0d.chunk.js",
+    "main.js.map": "/maya/static/js/main.2d781b0d.chunk.js.map",
+    "runtime-main.js": "/maya/static/js/runtime-main.01a4e7a7.js",
+    "runtime-main.js.map": "/maya/static/js/runtime-main.01a4e7a7.js.map",
+    "static/js/2.0a79c142.chunk.js": "/maya/static/js/2.0a79c142.chunk.js",
+    "static/js/2.0a79c142.chunk.js.map": "/maya/static/js/2.0a79c142.chunk.js.map",
+    "index.html": "/maya/index.html",
+    "precache-manifest.681af6565473d3138397ee6bb5e72086.js": "/maya/precache-manifest.681af6565473d3138397ee6bb5e72086.js",
+    "service-worker.js": "/maya/service-worker.js",
+    "static/css/main.d1b05096.chunk.css.map": "/maya/static/css/main.d1b05096.chunk.css.map",
+    "static/js/2.0a79c142.chunk.js.LICENSE": "/maya/static/js/2.0a79c142.chunk.js.LICENSE",
+    "static/media/logo.svg": "/maya/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01a4e7a7.js",
+    "static/js/2.0a79c142.chunk.js",
+    "static/css/main.d1b05096.chunk.css",
+    "static/js/main.2d781b0d.chunk.js"
+  ]
+}
