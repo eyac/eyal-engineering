@@ -12,7 +12,7 @@ import Node from './icons/Node';
 const IconList = () => {
   return (
     <Fragment>
-      <div>
+      <div className="icon-list">
         <CSS/>
         <GitRed/>
         <JS/>
@@ -24,8 +24,12 @@ const IconList = () => {
         <HTMLBlack/>
       </div>
       <style jsx>{`
+        .icon-list {
+           height: 200px;
+           display: block;
+         }
         svg {
-          margin: 0 10px;
+          margin: 60px 10px;
           height: 70px;
           width: 70px;
         }

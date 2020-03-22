@@ -13,11 +13,9 @@ const About = () => {
       </p>
       <style jsx>{`
         .about {
-           padding: 0 20px;
+           min-height: 70vh;
+           padding: 0 40px;
            text-align: left;
-        }
-        h1 {
-          margin-top: 50px;
         }
     `}</style>
     </div>

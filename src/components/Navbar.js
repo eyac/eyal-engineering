@@ -1,0 +1,67 @@
+import React, { Fragment } from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from 'react-router-dom';
+import { colors } from '../common/styles';
+import Home from './Home';
+import CustomComponent from './CustomComponent';
+import Header from './Header';
+
+const Navbar = () => {
+  return (
+    <Fragment>
+      <Router>
+        <div className="nav">
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/Tooltip">Tooltip</Link>
+            </li>
+          </ul>
+          <Header/>
+          <Switch>
+            <Route exact path="/">
+              <Home/>
+            </Route>
+            <Route path="/Tooltip">
+              <CustomComponent name="Tooltip"/>
+            </Route>
+          </Switch>
+        </div>
+      </Router>
+      <style jsx>{`
+       .nav {
+           position: absolute;
+           width: 100%;
+           top: 0;
+           text-align: left;
+           background-color: ${colors.black};
+        }
+        ul {
+          list-style: none;
+        }
+        li {
+          display: inline;
+        }
+        a {
+            text-decoration: none;
+            border: none;
+            color: ${colors.whitesmoke};
+            cursor: pointer;
+            border-radius: 17px;
+            padding: 5px 15px;
+            transition: background-color 0.35s ease;
+            white-space: nowrap;
+            font-weight: bold;
+         }
+    `}</style>
+    </Fragment>
+  );
+};
+
+export default Navbar;
