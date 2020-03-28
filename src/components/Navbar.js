@@ -17,10 +17,10 @@ const Navbar = () => {
         <div className="nav">
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link className="h-l" to="/">Home</Link>
             </li>
             <li>
-              <Link to="/Tooltip">Tooltip</Link>
+              <Link className="h-l" to="/Tooltip">Tooltip</Link>
             </li>
           </ul>
           <Header/>
@@ -34,8 +34,9 @@ const Navbar = () => {
           </Switch>
         </div>
       </Router>
-      <style jsx>{`
-       .nav {
+      {/*language=CSS*/}
+      <style jsx global>{`
+       .nav{
            position: absolute;
            width: 100%;
            top: 0;
@@ -48,16 +49,16 @@ const Navbar = () => {
         li {
           display: inline;
         }
-        a {
-            text-decoration: none;
-            border: none;
-            color: ${colors.whitesmoke};
-            cursor: pointer;
-            border-radius: 17px;
-            padding: 5px 15px;
-            transition: background-color 0.35s ease;
-            white-space: nowrap;
-            font-weight: bold;
+        a{
+           text-decoration: none;
+           border: none;
+           color: ${colors.white};
+           cursor: pointer;
+           border-radius: 17px;
+           padding: 5px 15px;
+           transition: background-color 0.35s ease;
+           white-space: nowrap;
+           font-weight: bold;
          }
     `}</style>
     </Fragment>

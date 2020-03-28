@@ -23,7 +23,8 @@ const IconList = () => {
         <Github/>
         <HTMLBlack/>
       </div>
-      <style jsx>{`
+      {/*language=CSS*/}
+      <style jsx global>{`
         .icon-list {
            height: 200px;
            display: block;

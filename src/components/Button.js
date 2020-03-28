@@ -1,12 +1,13 @@
 import React, { Fragment } from 'react';
 import { colors } from '../common/styles';
 
-const CustomButton = ({ text, handler }) => {
+const CustomButton = ({ id, text, handler }) => {
   return(
     <Fragment>
-      <button onClick={handler}>
+      <button id={id} onClick={handler}>
         {text}
       </button>
+      {/*language=CSS*/}
       <style jsx> {`
          button {
           font-weight: bold;
@@ -16,10 +17,13 @@ const CustomButton = ({ text, handler }) => {
           border: 1px solid ${colors.black};
           border-radius: 30px
         }
-
-        button:hover, :focus {
+       button:hover {
          background-color: ${colors.black};
          color: ${colors.whitesmoke};
+       }
+
+       button:focus {
+         outline: none;
        }
       `}
       </style>
