@@ -28,6 +28,7 @@ const IconList = () => {
         .icon-list {
            height: 200px;
            display: block;
+           text-align: center;
          }
         svg {
           margin: 60px 10px;

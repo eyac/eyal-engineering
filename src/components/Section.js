@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { colors } from '../common/styles';
 
 const Section = ({ component, theme }) => {
   return (
@@ -16,8 +17,8 @@ const Section = ({ component, theme }) => {
           color: #282c34;
         }
         .black{
-          background-color: #282c34;
-          color: white;
+          background-color: ${colors.black};
+          color: ${colors.white};
         }
     `}</style>
     </Fragment>

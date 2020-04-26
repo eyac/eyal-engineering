@@ -9,6 +9,8 @@ import { colors } from '../common/styles';
 import Home from './Home';
 import CustomComponent from './CustomComponent';
 import Header from './Header';
+import ToooltipInfo from './TooltipInfo'
+import TogglerInfo from './TogglerInfo'
 
 const Navbar = () => {
   return (
@@ -22,14 +24,23 @@ const Navbar = () => {
             <li>
               <Link className="h-l" to="/Tooltip">Tooltip</Link>
             </li>
+            <li>
+              <Link className="h-l" to="/Toggler">Toggler</Link>
+            </li>
           </ul>
           <Header/>
           <Switch>
             <Route exact path="/">
               <Home/>
             </Route>
+            <Route exact path="/eyal-engineering">
+              <Home/>
+            </Route>
             <Route path="/Tooltip">
-              <CustomComponent name="Tooltip"/>
+              <CustomComponent component={ToooltipInfo}/>
+            </Route>
+            <Route path="/Toggler">
+              <CustomComponent component={TogglerInfo}/>
             </Route>
           </Switch>
         </div>
