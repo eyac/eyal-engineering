@@ -2,8 +2,8 @@ import React from 'react';
 
 const About = () => {
   return (
-    <div className="about">
-      <h1>About me</h1>
+    <div className="career">
+      <h1>My Career</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -21,13 +21,15 @@ const About = () => {
         quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</p>
       {/*language=CSS*/}
       <style jsx>{`
-        .about {
+        .career {
            min-height: 50vh;
            padding: 0 40px;
            text-align: left;
         }
 
-        p { margin-bottom: 25px;}
+        p {
+          margin-bottom: 25px;
+        }
     `}</style>
     </div>
   );

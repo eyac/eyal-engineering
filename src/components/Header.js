@@ -1,22 +1,37 @@
-import React, { Fragment } from 'react';
+import React  from 'react';
 import Eyal from './icons/Eyal.png';
+import { colors } from '../common/styles';
 
 const Header = () => {
   return (
-    <Fragment>
-      <h1>Eyal engineering services</h1>
+    <div className="header">
+      <h1 className="eyal-engineering">Eyal engineering services</h1>
       <img src={Eyal}></img>
       <style jsx>{`
+        .header {
+          height: 70px;
+          background-color: ${colors.black};
+          color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 18px;
+        }
         img {
           height: 120px;
           width: 120px;
           border-radius: 50%;
           position: absolute;
-          top: 20vh;
-          left: 10px;
+          top: 50px;
+          right: 100px;
+        }
+        .eyal-engineering {
+          position: absolute;
+          top: 25px;
+          font-size: 32px;
         }
     `}</style>
-    </Fragment>
+    </div>
   );
 };
 
