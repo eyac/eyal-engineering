@@ -1,18 +1,14 @@
 import React from 'react';
 import { colors } from '../common/styles';
-import CopyClipboard from './icons/CopyClipboard';
+import { CopyableLink, Themes } from 'eyal-copyable-link';
 
 const CustomComponent = ({ component }) => {
   const { name, Example, description, libraryName } = component;
   const npmLink = `npm install --save ${libraryName}`;
-  const copyNpmLink = () => {
-    document.getElementById('npm-command').select();
-    document.execCommand('copy');
-  };
 
   return (
     <div className="custom-component">
-      <div className="top">
+      <div className="example">
         <div className="card">
           <h1 className="component-name">{name}</h1>
           <div id={`${name}-placeholder`} className='placeholder'>
@@ -33,9 +29,15 @@ const CustomComponent = ({ component }) => {
           <h3>
             Download
           </h3>
-          <button className='npm-link' onClick={copyNpmLink}>
-            <textarea spellcheck="false" onChange={() => ''} id="npm-command" value={npmLink}/><CopyClipboard/>
-          </button>
+          <CopyableLink text={npmLink} theme={Themes.RED}/>
+        </div>
+      </div>
+      <div className="bottom">
+        <div className="card">
+          <h3>
+            How to use
+          </h3>
+          <p style={{textAlign: 'left'}}>TODO</p>
         </div>
       </div>
       {/*language=CSS*/}
@@ -61,10 +63,10 @@ const CustomComponent = ({ component }) => {
             background-color: ${colors.red};
             color: ${colors.black};
           }
-          .top {
+          .example {
               margin: 20px auto;
               width: 700px;
-              height: 320px;
+              height: 280px;
           }
           .bottom {
              display: block;
@@ -77,40 +79,13 @@ const CustomComponent = ({ component }) => {
               font-size: 24px;
               margin-bottom: 25px;
           }
-          .npm-link {
-              margin: 30px 0 10px 0;
-              height: 40px;
-              width: 500px;
-              padding: 10px;
-              background-color: ${colors.red3};
-              position: relative;
-              text-align: center;
-              border-radius: 6px;
-              cursor: pointer;
-              border: none;
-              font-size: 15px;
-          }
-          #npm-command {
-            all: unset;
-            width: 280px;
-            height: 20px;
-            font-family: "Fira Mono", "Andale Mono", Consolas, monospace;
-          }
           .placeholder {
-            position: relative;
-            height: 200px;
-            width: 100%;
-            margin-top: 100px;
+            display: inline-block;
+            margin-top: 80px;
           }
-          button:hover, active {
-              background-color: ${colors.red2};
-           }
           h1, h3 {
              text-align: left;
           }
-          button:focus {
-             outline: none;
-           }
 
       `}</style>
     </div>

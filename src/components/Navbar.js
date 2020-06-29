@@ -9,8 +9,9 @@ import { colors } from '../common/styles';
 import Home from './Home';
 import CustomComponent from './CustomComponent';
 import Header from './Header';
-import ToooltipInfo from './TooltipInfo'
-import TogglerInfo from './TogglerInfo'
+import ToooltipInfo from './TooltipInfo';
+import TogglerInfo from './TogglerInfo';
+import LinkInfo from './LinkInfo';
 
 const Navbar = () => {
   return (
@@ -26,6 +27,8 @@ const Navbar = () => {
             </li>
             <li>
               <Link className="h-l" to="/Toggler">Toggler</Link>
+            </li>            <li>
+              <Link className="h-l" to="/CopyLink">Copyable link</Link>
             </li>
           </ul>
           <Header/>
@@ -41,6 +44,9 @@ const Navbar = () => {
             </Route>
             <Route path="/Toggler">
               <CustomComponent component={TogglerInfo}/>
+            </Route>
+            <Route path="/CopyLink">
+              <CustomComponent component={LinkInfo}/>
             </Route>
           </Switch>
         </div>

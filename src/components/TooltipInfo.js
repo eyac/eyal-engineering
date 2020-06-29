@@ -13,7 +13,7 @@ const element = (
 );
 
 const TooltipExample = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const handleClick = e => {
     setShow(prevShow => !prevShow);
     if (show) {
@@ -30,10 +30,15 @@ const TooltipExample = () => {
         handleClick(e)
       }}></Button>
       {/*language=CSS*/}
-      <style jsx>{`
+      <style jsx global>{`
         #tooltip-button {
-            margin-top: 200px;
+            margin-top: 80px;
+            cursor: pointer;
         }
+        #tooltip-button:hover, active {
+            background-color: ${colors.black};
+        }
+
       `}</style>
     </Fragment>
   );
