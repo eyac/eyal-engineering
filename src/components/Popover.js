@@ -27,7 +27,7 @@ export class PopoverManager {
   }
 
   static showTooltip(target, element, position) {
-    createAndShow(target, element, position, false, POPOVERS.TOOLTIP);
+    createAndShow(target, element, position, true, POPOVERS.TOOLTIP);
   }
 
   static showMenu(target, element, position, closeOnClickOutside) {

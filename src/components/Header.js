@@ -1,4 +1,4 @@
-import React  from 'react';
+import React, { Fragment } from 'react';
 import Eyal from './icons/Eyal.png';
 import { colors } from '../common/styles';
 
@@ -7,6 +7,7 @@ const Header = () => {
     <div className="header">
       <h1 className="eyal-engineering">Eyal engineering services</h1>
       <img src={Eyal}></img>
+      {/*language=CSS*/}
       <style jsx>{`
         .header {
           height: 70px;
