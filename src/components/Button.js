@@ -15,7 +15,10 @@ const CustomButton = ({ id, text, handler }) => {
           height: 36px;
           width: 300px;
           border: 1px solid ${colors.black};
-          border-radius: 30px
+          border-radius: 30px;
+          @media screen and (max-width: 600px){
+            width: 200px;
+          }
         }
        button:hover {
          background-color: ${colors.black};

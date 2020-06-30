@@ -29,7 +29,7 @@ const CustomComponent = ({ component }) => {
           <h3>
             Download
           </h3>
-          <CopyableLink text={npmLink} theme={Themes.RED}/>
+          <CopyableLink text={npmLink} width='600px' theme={Themes.RED}/>
         </div>
       </div>
       <div className="bottom">
@@ -47,12 +47,15 @@ const CustomComponent = ({ component }) => {
               text-align: center;
               padding: 50px 50px;
               margin: 0 auto;
+
+              @media screen and (max-width: 600px){
+                padding: 5px 10px;
+           }
           }
           .card {
               box-shadow: 0 12px 19px 0 rgba(192, 192, 192, 0.5);
               padding: 20px;
               height: 100%;
-              width: 100%;
               border-radius: 8px;
           }
           .black {
@@ -67,6 +70,9 @@ const CustomComponent = ({ component }) => {
               margin: 20px auto;
               width: 700px;
               height: 280px;
+              @media screen and (max-width: 600px){
+                width: 270px;
+           }
           }
           .bottom {
              display: block;
@@ -74,6 +80,10 @@ const CustomComponent = ({ component }) => {
              margin: 50px auto;
              width: 700px;
              height: 130px;
+             @media screen and (max-width: 600px){
+                width: 270px;
+                height: 200px;
+           }
           }
           .component-name {
               font-size: 24px;

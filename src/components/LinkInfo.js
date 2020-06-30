@@ -1,7 +1,7 @@
 import React from 'react';
 import { CopyableLink, Themes } from 'eyal-copyable-link';
 const LinkExample = () => {
-  return <CopyableLink text="test" width='320px' theme={Themes.BLUE}/>;
+  return <CopyableLink text="click here to copy text" width='600px' theme={Themes.BLUE}/>;
 };
 
 
