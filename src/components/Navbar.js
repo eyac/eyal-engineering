@@ -56,26 +56,30 @@ const Navbar = () => {
        .nav{
            position: absolute;
            width: 100%;
-           top: 0;
            text-align: left;
            background-color: ${colors.black};
         }
         ul {
           list-style: none;
+          line-height: 25px;
         }
         li {
           display: inline;
         }
-        a{
+        a {
            text-decoration: none;
            border: none;
            color: ${colors.white};
            cursor: pointer;
            border-radius: 17px;
-           padding: 5px 15px;
+           padding: 5px 10px;
            transition: background-color 0.35s ease;
            white-space: nowrap;
            font-weight: bold;
+
+           @media screen and (max-width: 600px){
+             padding: 5px 5px;
+           }
          }
     `}</style>
     </Fragment>

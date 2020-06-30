@@ -15,6 +15,7 @@ const Section = ({ component, theme }) => {
           font-size: 16px;
           background-color: white;
           color: #282c34;
+          line-height: 1.6;
         }
         .black{
           background-color: ${colors.black};

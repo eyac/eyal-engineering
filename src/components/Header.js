@@ -25,11 +25,20 @@ const Header = () => {
           position: absolute;
           top: 50px;
           right: 100px;
+
+          @media screen and (max-width: 600px){
+           display: none;
+          }
         }
         .eyal-engineering {
           position: absolute;
-          top: 25px;
+          top: 35px;
           font-size: 32px;
+
+          @media screen and (max-width: 600px){
+           top: 60px;
+           font-size: 25px;
+          }
         }
     `}</style>
     </div>
