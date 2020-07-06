@@ -27,11 +27,13 @@ const IconList = () => {
       <style jsx global>{`
         .icon-list {
            height: 200px;
-           display: block;
-           text-align: center;
+           display: flex;
+           align-items: center;
+           justify-content: space-evenly;
+           flex-flow: wrap;
+           padding: 20px;
          }
         svg {
-          margin: 60px 10px;
           height: 70px;
           width: 70px;
         }

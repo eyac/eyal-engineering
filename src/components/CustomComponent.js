@@ -24,7 +24,7 @@ const CustomComponent = ({ component }) => {
           <p style={{textAlign: 'left'}}>{description}</p>
         </div>
       </div>
-      <div className="bottom right">
+      <div className="bottom">
         <div className="card red">
           <h3>
             Download
@@ -43,10 +43,13 @@ const CustomComponent = ({ component }) => {
       {/*language=CSS*/}
       <style jsx>{`
           .custom-component {
+              height: 1000px;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: space-evenly;
               background-color: ${colors.white};
               text-align: center;
-              padding: 50px 50px;
-              margin: 0 auto;
 
               @media screen and (max-width: 600px){
                 padding: 5px 10px;
@@ -55,7 +58,6 @@ const CustomComponent = ({ component }) => {
           .card {
               box-shadow: 0 12px 19px 0 rgba(192, 192, 192, 0.5);
               padding: 20px;
-              height: 100%;
               border-radius: 8px;
           }
           .black {
@@ -67,27 +69,19 @@ const CustomComponent = ({ component }) => {
             color: ${colors.black};
           }
           .example {
-              margin: 20px auto;
               width: 700px;
-              height: 280px;
               @media screen and (max-width: 600px){
                 width: 270px;
            }
           }
           .bottom {
-             display: block;
-             flex-direction: row;
-             margin: 50px auto;
              width: 700px;
-             height: 130px;
              @media screen and (max-width: 600px){
                 width: 270px;
-                height: 200px;
            }
           }
           .component-name {
               font-size: 24px;
-              margin-bottom: 25px;
           }
           .placeholder {
             display: inline-block;
