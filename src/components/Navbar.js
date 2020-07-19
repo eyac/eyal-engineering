@@ -54,14 +54,15 @@ const Navbar = () => {
       {/*language=CSS*/}
       <style jsx global>{`
        .nav{
-           position: absolute;
-           width: 100%;
-           text-align: left;
            background-color: ${colors.black};
         }
         ul {
+          display: flex;
+          justify-content: space-evenly;
           list-style: none;
           line-height: 25px;
+          margin: 0;
+          padding: 15px;
         }
         li {
           display: inline;

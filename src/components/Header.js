@@ -14,7 +14,6 @@ const Header = () => {
           background-color: ${colors.black};
           color: white;
           display: flex;
-          align-items: center;
           justify-content: center;
           font-size: 18px;
         }
