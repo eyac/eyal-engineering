@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/eyal-engineering/precache-manifest.945c2ce7f21b7a0e18ab70f1fa233518.js"
+  "/eyal-engineering/precache-manifest.f9e59e8fc76c284c35c6d71f0e619a0f.js"
 );
 
 self.addEventListener('message', (event) => {
